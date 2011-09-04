@@ -12,7 +12,6 @@ package br.ufpb.dce.apspoo.persistencia;
 
 import br.ufpb.dce.apspoo.banco.Agencia;
 import br.ufpb.dce.apspoo.banco.Conta;
-import br.ufpb.dce.apspoo.persistencia.arquivo.PersArquivoException;
 
 /**
  * @author rodrigor

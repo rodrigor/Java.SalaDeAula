@@ -17,6 +17,7 @@ package br.ufpb.poo.agenda;
  */
 public class AniversarianteInexistenteException extends Exception {
 	
+
 	public AniversarianteInexistenteException(String msg){
 		super(msg);
 	}
