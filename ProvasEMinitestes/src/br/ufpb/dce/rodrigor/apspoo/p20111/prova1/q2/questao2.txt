@@ -1,0 +1,17 @@
+Implemente apenas o que for necessário para que o código abaixo compile.
+
+1 class Main{
+2   public static void main(String[] args){
+3     //Construtor: (nome,id,preço)
+4     ProdutoPerecivel fruta = new Fruta(“Banana Prata”,123,1.0);
+5     fruta.setVencimento(“23/10/2011”);
+6     ProdutoPerecivel carne = new Carne(“Picanha”,312,30.0);
+7     carne.setVencimento(“15/11/2011”);
+8     ProdutoNaoPerecivel panela = new Panela(“Panela Inox”,234,100.0);
+9     Pedido pedido = new Pedido();
+10    pedido.addProduto(fruta);
+11    pedido.addProduto(carne);
+12    pedido.addProduto(panela,2);
+13    System.out.println(pedido.getTotalPedido());
+14  }
+15 }

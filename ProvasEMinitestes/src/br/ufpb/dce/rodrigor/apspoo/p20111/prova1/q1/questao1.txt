@@ -1,0 +1,27 @@
+Implemente a classe Pedido, de modo que o teste abaixo passe. (Atenção, implemente apenas o código necessário para o teste passar)
+
+1 import static org.junit.Assert.assertEquals;
+2 import static org.junit.Assert.fail;
+3 import org.junit.Test;
+4 
+5 public class PedidoTest {
+6 
+7   @Test
+8   public void testPedido() {
+9      Pedido pedido = new Pedido();
+10     assertEquals(new Float(0.0f),pedido.getTotalPedido());
+11     Produto prod = new Produto();
+12     prod.setPreco(10.0f);
+13     try{
+14       pedido.addProduto(prod);
+15       fail("Pedido não deve aceitar um produto sem código");
+16     }catch(ErroPedidoException e){
+17       assertEquals("O código do produto não foi definido",e.getMessage());
+18     }
+19     prod.setCodigo(123);
+20     pedido.addProduto(prod);
+21     assertEquals(new Float(10.0),pedido.getTotalPedido());
+22     pedido.addProduto(prod);
+23     assertEquals(new Float(20.0),pedido.getTotalPedido());
+24   }
+25 }

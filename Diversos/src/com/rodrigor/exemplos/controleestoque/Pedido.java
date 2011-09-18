@@ -25,6 +25,8 @@ public class Pedido {
 	private int quantItens = 0;
 	
 	public void addProduto(Produto p){
+		if(p.getCodigo() == 0)
+			throw new ErroPedidoException("O código do produto não foi definido");
 		if(quantItens > TOTAL_ITENS){
 			return;
 		}
@@ -40,7 +42,7 @@ public class Pedido {
 	
 	
 	
-	public float getTotalPedido(){
+	public Float getTotalPedido(){
 		float soma = 0;
 		for(int i = 0; i < quantItens; i++ ){
 			soma += itens[i].getTotal();
