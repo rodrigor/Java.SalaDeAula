@@ -21,8 +21,8 @@ public class Main {
 		
 		file.setCalculadorCusto(cebola);
 		
-		Produto feijao = new Produto("Feijao");
-		feijao.setCalculadorCusto(new FeijaoCalculadorCusto());
+		Produto feijao = new Produto("Televisao");
+		feijao.setCalculadorCusto(new ProdutoEletronicoCalculadorCusto());
 		
 		System.out.println(file.calcularCusto());
 
