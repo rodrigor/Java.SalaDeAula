@@ -12,6 +12,8 @@ public class FormularioTeste {
 		form.addCampo(new Campo("Nome","nome",new ValidadorTexto(30)));
 		form.addCampo(new Campo("Idade","idade",new ValidadorNumerico(0,150)));
 		
+		
+		
 		boolean valido;
 		for(Campo c: form.getCampos()){
 			do{
