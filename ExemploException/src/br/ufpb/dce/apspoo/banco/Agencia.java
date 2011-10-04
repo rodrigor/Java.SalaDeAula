@@ -45,7 +45,7 @@ public class Agencia {
 		try {
 			gerPersistencia.gravar(c);
 		} catch (PersistenciaException e) {
-			throw new ContaException(e,this);
+			throw new ContaException(e);
 		}
 		return c;
 	}

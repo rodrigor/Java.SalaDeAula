@@ -19,9 +19,8 @@ public class ContaException extends Exception {
 	 * @param e
 	 * @param string
 	 */
-	public ContaException(Throwable e, Agencia a) {
+	public ContaException(Throwable e) {
 		super(e);
-		this.a = a;
 	}
 	/**
 	 * 

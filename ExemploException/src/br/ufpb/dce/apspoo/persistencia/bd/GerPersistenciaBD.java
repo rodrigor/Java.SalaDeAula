@@ -26,8 +26,6 @@ public class GerPersistenciaBD implements GerPersistencia {
 	 */
 	@Override
 	public void gravar(Conta c) {
-		// TODO Auto-generated method stub
-
 	}
 
 	/* (non-Javadoc)
